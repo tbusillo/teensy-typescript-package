@@ -24,10 +24,11 @@
     "dist"
   ],
   "scripts": {
-    "dev": "unbuild --stub",
+    "dev": "unbuild",
     "start": "nodemon --exec ts-node src/index.ts",
     "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build": "unbuild",
+    "stub": "pnpm unbuild --stub",
     "test": "jest",
     "pre:ci:test": "pnpm install -r --store=node_modules/.pnpm-store",
     "ci:test": "pnpm build && pnpm test",
