@@ -8,8 +8,8 @@ export default defineBuildConfig({
     // mkdist builder transpiles file-to-file keeping original sources structure
     {
       builder: "mkdist",
-      input: "./src/package/components/",
-      outDir: "./build/components"
+      input: "./src",
+      outDir: "./dist"
     }
   ],
 
@@ -17,5 +17,6 @@ export default defineBuildConfig({
   outDir: "build",
 
   // Generates .d.ts declaration file
-  declaration: true
+  declaration: true,
+  failOnWarn: false
 });

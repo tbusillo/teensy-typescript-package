@@ -3,10 +3,10 @@
 
 A teensy tiny TypeScript package template. 
 ## Features
-- TypeScript 4.8+
+- TypeScript
 - native ESM support
 - Rollup/unbuild - bundless bundler
-- jest/ts-jest
+- Jest/ts-jest
 - eslint/prettier/git hooks
 - CI/CD via GH Actions
 ## Getting started
@@ -14,8 +14,15 @@ A teensy tiny TypeScript package template.
 ```sh
 
 git clone <repository url>
+
 pnpm install
 
+# this will stub your appplication and shouldn't be needed again
+unbuild dev
+
 ```
+
+
+### If anyone requires atttion 
 
 ## Contributing
