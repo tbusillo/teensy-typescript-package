@@ -4,5 +4,3 @@ export function add() {
 
   return one + two;
 }
-
-console.log("testing 1 2 3");
