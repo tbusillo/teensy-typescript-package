@@ -2,7 +2,7 @@
 
 [![.github/workflows/test.yml](https://github.com/tbusillo/teensy-typescript-package/actions/workflows/test.yml/badge.svg)](https://github.com/tbusillo/teensy-typescript-package/actions/workflows/test.yml)
 
-A teensy tiny TypeScript package template, built to make getting started with TypeScript projects a little less painful. 
+A teensy tiny TypeScript package template, built to make getting started with TypeScript projects a little less painful.
 
 ## Features
 
@@ -10,7 +10,7 @@ A teensy tiny TypeScript package template, built to make getting started with Ty
 - Bundling using [Rollup](https://github.com/rollup/rollup) and [unbuild](https://github.com/unjs/unbuild) with native supports for `ESM/CJS` packages
 - Unit testing using `jest` / `ts-jest`
 - [ESLint](https://github.com/eslint/eslint), [prettier](https://github.com/prettier/prettier), and git hooks with [Husky](https://github.com/typicode/husky)
-- CI/CD workflows using [Github Actions](https://docs.github.com/en/actions) 
+- CI/CD workflows using [Github Actions](https://docs.github.com/en/actions)
 - Extendable configurations (e.g., tsconfig) perfect for use in monorepos
 -
 
