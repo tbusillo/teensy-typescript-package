@@ -1,5 +1,4 @@
 <br/>
-<br/>
 <h1 align="center">
   WIP - Teensy Tiny TypeScript Package
 </h1>
