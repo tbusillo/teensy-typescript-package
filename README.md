@@ -2,24 +2,39 @@
 
 [![.github/workflows/test.yml](https://github.com/tbusillo/teensy-typescript-package/actions/workflows/test.yml/badge.svg)](https://github.com/tbusillo/teensy-typescript-package/actions/workflows/test.yml)
 
-A teensy tiny TypeScript package template, built to make developing with TypeScript within the JS ecosystem a little less painful.
+A teensy tiny TypeScript package template, built to make getting started with TypeScript projects a little less painful. 
 
 ## Features
 
-- `TypeScript` right from the start
-- Bundling using `Rollup` and `unbuild` with native supports for `ESM/CJS` packages
+- [TypeScript](https://www.typescriptlang.org/) right from the start
+- Bundling using [Rollup](https://github.com/rollup/rollup) and [unbuild](https://github.com/unjs/unbuild) with native supports for `ESM/CJS` packages
 - Unit testing using `jest` / `ts-jest`
-- `ESLint`, `prettier`, and customer `pre-commit` hooks pre-configured
-- `GH Actions` - Simple CI/CD workflow example
-- Perfect start for use within monorepos
-- Prebuild commands with support for building/caching dependencies on Netlify
+- [ESLint](https://github.com/eslint/eslint), [prettier](https://github.com/prettier/prettier), and git hooks with [Husky](https://github.com/typicode/husky)
+- CI/CD workflows using [Github Actions](https://docs.github.com/en/actions) 
+- Extendable configurations (e.g., tsconfig) perfect for use in monorepos
+-
+
+## Installation
+
+```bash
+git clone git@github.com:tbusillo/teensy-typescript-package.git
+
+```
+
+```diff-bash
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 ## Getting Started
 
 ```bash
 
 # clone the template via Github.com or...
-git clone <repository url>
+git clone git@github.com:tbusillo/teensy-typescript-package.git
 
 # install dependencies
 pnpm install
