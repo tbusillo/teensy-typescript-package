@@ -46,7 +46,7 @@
     "ci:test": "pnpm build && pnpm test",
     "clean": "rm -rf dist",
     "release": "standard-version",
-    "format": "prettier --check '{**/*.{js,jsx,ts,tsx}'",
+    "format": "prettier --check '**/*.{ts,js,json,md}'",
     "lint-staged": "pnpm lint && pnpm format",
     "prepare": "pnpm husky install"
   },
@@ -62,7 +62,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": [
+        "lint-staged",
+        "pnpm test",
+        "git add"
+      ]
     }
   },
   "devDependencies": {
