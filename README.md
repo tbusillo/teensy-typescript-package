@@ -35,7 +35,13 @@ pnpm start
 # Build package
 pnpm build
 
+# Clean /dist cache
+pnpm clean
+
 ```
+
+## Contributing / Issues
+
 
 
 ## License
