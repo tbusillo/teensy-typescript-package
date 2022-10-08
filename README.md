@@ -1,4 +1,6 @@
 
+<br/>
+<br/>
 <h1 align="center">
   WIP - Teensy Tiny TypeScript Package
 </h1>
@@ -10,13 +12,6 @@
   <a href="https://github.com/tbusillo/teensy-typescript-package/actions/workflows"><img src="https://github.com/tbusillo/teensy-typescript-package/actions/workflows/test.yml/badge.svg" alt="CI status"></a>
 </p>
 <br/>
-
-
-# WIP - teensy TypeScript package template
-
-[![.github/workflows/test.yml](https://github.com/tbusillo/teensy-typescript-package/actions/workflows/test.yml/badge.svg)](https://github.com/tbusillo/teensy-typescript-package/actions/workflows/test.yml)
-
-A teensy tiny TypeScript package template, built to make getting started with TypeScript projects a little less painful.
 
 ## Features
 
