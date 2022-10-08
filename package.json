@@ -2,13 +2,24 @@
   "name": "@tbusillo/teensy-typescript-package",
   "author": "Tom Busillo",
   "version": "0.0.1",
+  "packageManager": "pnpm@7.13.2",
   "description": "A teensy-tiny Node.js TypeScript package template.",
   "type": "module",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/tbusillo/teensy-typescript-package.git"
   },
+  "bugs": {
+    "url": "https://github.com/antfu/unplugin-starter/issues"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "package",
+    "template",
+    "nodejs"
+  ],
   "sideEffects": false,
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
@@ -27,24 +38,18 @@
     "dev": "unbuild",
     "start": "nodemon --exec ts-node src/index.ts",
     "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
-    "build": "unbuild",
+    "build": "pnpm clean && unbuild",
     "stub": "pnpm unbuild --stub",
     "test": "jest",
-    "lint": "eslint . --ext .ts && prettier --check",
+    "lint": "eslint --ext .ts --fix",
     "pre:ci:test": "pnpm install -r --store=node_modules/.pnpm-store",
     "ci:test": "pnpm build && pnpm test",
     "clean": "rm -rf dist",
     "release": "standard-version",
-    "format": "pnpm prettier --write . --list-different",
+    "format": "prettier --check '{**/*.{js,jsx,ts,tsx}'",
     "lint-staged": "pnpm lint && pnpm format",
     "prepare": "pnpm husky install"
   },
-  "keywords": [
-    "typescript",
-    "node",
-    "package",
-    "template"
-  ],
   "nodemonConfig": {
     "include": [
       "src",
@@ -55,8 +60,10 @@
       "node_modules"
     ]
   },
-  "lint-staged": {
-    "*": "pnpm eslint . .ts && pnpm prettier --write . --list-different"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "devDependencies": {
     "@jest/globals": "^29.0.2",
