@@ -30,10 +30,12 @@
     "build": "unbuild",
     "stub": "pnpm unbuild --stub",
     "test": "jest",
+    "lint": "eslint . --ext .ts && prettier --check",
     "pre:ci:test": "pnpm install -r --store=node_modules/.pnpm-store",
     "ci:test": "pnpm build && pnpm test",
     "clean": "rm -rf dist",
-    "release": "standard-version"
+    "release": "standard-version",
+    "prepare": "pnpm husky install"
   },
   "keywords": [
     "typescript",
@@ -51,13 +53,27 @@
       "node_modules"
     ]
   },
+  "lint-staged": {
+    "*.{ts},!(*test).js": [
+      "pnpm lint --fix",
+      "pnpm test --bail --findRelatedTests",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "@jest/globals": "^29.0.2",
     "@types/jest": "^29.0.0",
     "@types/node": "^18.7.15",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
     "dotenv": "^16.0.2",
-    "jest": "^29.1.2",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "jest": "28",
+    "lint-staged": "^13.0.3",
     "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "standard-version": "^9.5.0",
     "ts-jest": "^28.0.8",
