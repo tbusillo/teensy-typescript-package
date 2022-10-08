@@ -1,4 +1,18 @@
-# WIP - teensy typescript package
+
+<h1 align="center">
+  WIP - Teensy Tiny TypeScript Package
+</h1>
+<p align="middle">
+  A lightweight template to make your next project just a litle easier.
+  </p>
+<br/>
+<p align="center">
+  <a href="https://github.com/tbusillo/teensy-typescript-package/actions/workflows"><img src="https://github.com/tbusillo/teensy-typescript-package/actions/workflows/test.yml/badge.svg" alt="CI status"></a>
+</p>
+<br/>
+
+
+# WIP - teensy TypeScript package template
 
 [![.github/workflows/test.yml](https://github.com/tbusillo/teensy-typescript-package/actions/workflows/test.yml/badge.svg)](https://github.com/tbusillo/teensy-typescript-package/actions/workflows/test.yml)
 
@@ -12,7 +26,6 @@ A teensy tiny TypeScript package template, built to make getting started with Ty
 - [ESLint](https://github.com/eslint/eslint), [prettier](https://github.com/prettier/prettier), and git hooks with [Husky](https://github.com/typicode/husky)
 - CI/CD workflows using [Github Actions](https://docs.github.com/en/actions)
 - Extendable configurations (e.g., tsconfig) perfect for use in monorepos
--
 
 ## Installation
 
@@ -30,7 +43,6 @@ pnpm install && pnpm build && pnpm dev
 ## Getting Started
 
 ```bash
-
 # clone the template via Github.com or...
 git clone git@github.com:tbusillo/teensy-typescript-package.git
 
@@ -59,17 +71,14 @@ pnpm clean
 
 # Install git hooks
 pnpm prepare
-
 ```
 
-## Realses
+## Releasing
 
 If you intend to distribute your package via a manager (e.g., `npm`, `yarn`, etc), this template
 includes [standard-version](https://github.com/conventional-changelog/standard-version).
 
 To run a release, update the included `./.npmrc` with the URL of the
-
-## Contributing / Issues
 
 ## License
 

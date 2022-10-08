@@ -19,4 +19,4 @@ export function add(): number {
   return one + two
 }
 
-console.log('lint this please!')
+console.log('Did this work?')

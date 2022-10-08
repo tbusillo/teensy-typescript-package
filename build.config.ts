@@ -7,14 +7,14 @@ export default defineBuildConfig({
     './src/index',
     // mkdist builder transpiles file-to-file keeping original sources structure
     {
-      builder: 'mkdist',
+      builder: 'rollup',
       input: './src',
       outDir: './dist'
     }
   ],
 
   // Change outDir, default is 'dist'
-  outDir: 'build',
+  outDir: 'dist',
 
   // Generates .d.ts declaration file
   declaration: true,
