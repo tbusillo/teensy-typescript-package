@@ -77,15 +77,6 @@ To run a release, update the included `./.npmrc` with the URL of the
 
 ## License
 
-## Releasing
-
-If you intend to distribute your package via a manager (e.g., `npm`, `yarn`, etc), this template
-includes [standard-version](https://github.com/conventional-changelog/standard-version).
-
-To run a release, update the included `./.npmrc` with the URL of the
-
-## License
-
 MIT License
 
 Copyright (c) 2022 Tom
