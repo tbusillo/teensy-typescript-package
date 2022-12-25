@@ -11,7 +11,7 @@
     "url": "https://github.com/tbusillo/teensy-typescript-package.git"
   },
   "bugs": {
-    "url": "https://github.com/antfu/unplugin-starter/issues"
+    "url": "https://github.com/tbusillo/teensy-typescript-package/issues"
   },
   "keywords": [
     "typescript",
@@ -42,7 +42,7 @@
     "stub": "pnpm unbuild --stub",
     "test": "jest",
     "lint": "eslint --ext .ts --fix",
-    "pre:ci:test": "pnpm install -r --store=node_modules/.pnpm-store",
+    "preci:test": "pnpm install -r --store=node_modules/.pnpm-store",
     "ci:test": "pnpm build && pnpm test",
     "clean": "rm -rf dist",
     "release": "standard-version",

@@ -11,11 +11,16 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "moduleResolution": "node",
+    "outDir": "dist",
     "declaration": true,
-    "declarationDir": "dist"
+    "declarationDir": "dist",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src/*.ts"],
+  "exclude": ["node_modules"],
   "ts-node": {
-    "esm": true
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
   }
 }
